@@ -1,0 +1,32 @@
+header {
+	position: static;
+	width: 1280px;
+	height: 80px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10px;
+	padding-bottom: 0px;
+	align-items: center;
+	background: white;
+	background: transparent;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+	line-height: 80px;
+}
+
+.nav__item {
+	text-align: center;
+	height: 100%;
+	padding: 0px 20px;
+}
+.nav__item a {
+	font-family: "PointerX";
+	color: black;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
