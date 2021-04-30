@@ -1,8 +1,7 @@
 header {
 	position: static;
 	width: 1280px;
-	height: 80px;
-	border: 1px solid black;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 10px;
@@ -11,22 +10,35 @@ header {
 	background: white;
 	background: transparent;
 }
+.header__logo {
+	width: 250px;
+}
 
 .nav {
 	display: flex;
 	justify-content: space-around;
 	height: 100%;
-	line-height: 80px;
+	line-height: 60px;
 }
 
 .nav__item {
 	text-align: center;
 	height: 100%;
-	padding: 0px 20px;
+
+	transition: 0.3s;
 }
 .nav__item a {
-	font-family: "PointerX";
+	display: block;
+	font-family: "Bebas";
 	color: black;
-	font-size: 15px;
-	letter-spacing: 1px;
+	font-size: 22px;
+	padding: 0px 20px;
+}
+
+.nav__item:hover {
+	background: #2e9cdb;
+}
+
+.nav__item a:hover {
+	color: white;
 }

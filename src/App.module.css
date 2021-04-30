@@ -82,8 +82,6 @@ a {
 }
 /* /Обнуляющие стили  */
 
-@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap");
-
 @font-face {
 	font-family: Coiny;
 	src: url(./fonts/Coiny.ttf);
@@ -92,11 +90,16 @@ a {
 	font-family: PointerX;
 	src: url(./fonts/pointerX.ttf);
 }
+@font-face {
+	font-family: Bebas;
+	src: url(./fonts/Bebas.ttf);
+}
 
 body {
 	width: 100vw;
 	height: 100vh;
-	background: url(./img/fon.jpg) no-repeat;
+	background: url(./img/fonV2.jpg) no-repeat;
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -106,12 +109,19 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black;
 	margin: 0 auto;
 }
 .header {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	border: 1px solid red;
+
+	background: white;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+}
+
+.content {
+	width: ;
 }
