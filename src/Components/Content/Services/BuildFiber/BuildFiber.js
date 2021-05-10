@@ -1,9 +1,9 @@
 import React from 'react'
 import s from './BuildFiber.module.css'
-import buildFiberImg1 from './../../../../img/BuildFiber/buildFiber1.jpg'
-import buildFiberImg2 from './../../../../img/BuildFiber/buildFiber2.jpg'
-import buildFiberImg3 from './../../../../img/BuildFiber/buildFiber3.jpg'
-import buildFiberImg4 from './../../../../img/BuildFiber/buildFiber4.jpg'
+import buildFiberImg1 from './../../../../img/buildFiber/buildFiber1.jpg'
+import buildFiberImg2 from './../../../../img/buildFiber/buildFiber2.jpg'
+import buildFiberImg3 from './../../../../img/buildFiber/buildFiber3.jpg'
+import buildFiberImg4 from './../../../../img/buildFiber/buildFiber4.jpg'
 
 const BuildFiber = () => {
 	return (
