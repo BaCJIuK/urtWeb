@@ -83,16 +83,17 @@ a {
 /* /Обнуляющие стили  */
 
 @font-face {
-	font-family: Coiny;
-	src: url(./fonts/Coiny.ttf);
-}
-@font-face {
-	font-family: PointerX;
-	src: url(./fonts/pointerX.ttf);
-}
-@font-face {
 	font-family: Bebas;
 	src: url(./fonts/Bebas.ttf);
+}
+@font-face {
+	font-family: SourceSansProBold;
+	src: url(./fonts/SourceSansProBold.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: LoraRegular;
+	src: url(./fonts/LoraRegular.ttf);
 }
 
 body {
@@ -115,11 +116,11 @@ body {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-
 	background: white;
 	position: sticky;
 	top: 0px;
 	left: 0px;
+	z-index: 100;
 }
 
 .content {

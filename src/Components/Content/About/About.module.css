@@ -1,5 +1,69 @@
 .about {
 	width: 1280px;
-	padding: 10px 20px;
-	background: rgba(240, 248, 255, 0.9);
+	margin-top: 20px;
+	padding: 20px 30px;
+	background: rgba(240, 248, 255, 0.95);
+}
+.about p {
+	font-family: LoraRegular;
+	font-size: 1.1em;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.about ul {
+	list-style: none;
+	font-family: LoraRegular;
+	font-size: 1.1em;
+}
+.about li {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 4px;
+	z-index: 10;
+}
+.about li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(./../../../img/common/blueArrow.png);
+	background-position: center;
+	background-size: cover;
+	left: -35px;
+	top: 3px;
+}
+
+.about__title {
+	margin-bottom: 10px;
+	font-size: 1.9em;
+	font-family: SourceSansProBold;
+}
+.flexImages {
+	display: flex;
+	justify-content: space-around;
+	margin: 15px 0px;
+}
+.flexImages div {
+	transition: 0.5s;
+	cursor: pointer;
+}
+.flexImages div:hover {
+	transform: scale(1.1);
+}
+.organizationFoto__item {
+	width: 350px;
+}
+.organizationFoto__item img {
+	width: 100%;
+	height: 100%;
+}
+.technic__item {
+	width: 350px;
+}
+.technic__item img {
+	width: 100%;
+	height: 100%;
 }

@@ -24,9 +24,9 @@ header {
 .nav__item {
 	text-align: center;
 	height: 100%;
-
 	transition: 0.3s;
 }
+
 .nav__item a {
 	display: block;
 	font-family: "Bebas";
@@ -41,4 +41,44 @@ header {
 
 .nav__item a:hover {
 	color: white;
+}
+.nav__item__services {
+	position: relative;
+}
+.dropMenu {
+	position: absolute;
+	transform: translateX(-25%);
+	width: 300px;
+	display: none;
+	animation: show;
+}
+.dropMenu__item {
+	display: block;
+	line-height: 1.2;
+	background: white;
+	text-align: left;
+	transition: 0.3s;
+}
+.dropMenu__item a {
+	padding: 7px 10px;
+}
+.dropMenu__item:hover {
+	background: #2e9cdb;
+}
+.dropMenu__item a:hover {
+	color: white;
+}
+
+.nav__item__services:hover .dropMenu {
+	display: block;
+	animation: show 0.5s;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
