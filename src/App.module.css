@@ -124,5 +124,46 @@ body {
 }
 
 .content {
-	width: ;
+	width: 1280px;
+	margin-top: 20px;
+	padding: 20px 30px;
+	background: rgba(240, 248, 255, 0.95);
+}
+
+.content p {
+	font-family: LoraRegular;
+	font-size: 1.1em;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.content ul {
+	list-style: none;
+	font-family: LoraRegular;
+	font-size: 1.1em;
+}
+.content li {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 4px;
+	z-index: 10;
+}
+.content li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(./img/common/blueArrow.png);
+	background-position: center;
+	background-size: cover;
+	left: -35px;
+	top: 3px;
+}
+
+.content h3 {
+	margin-bottom: 10px;
+	font-size: 1.9em;
+	font-family: SourceSansProBold;
 }
