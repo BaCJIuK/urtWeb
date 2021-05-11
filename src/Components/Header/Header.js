@@ -12,7 +12,7 @@ const Header = () => {
 			<nav className={`${s.header__nav} ${s.nav}`}>
 				<div className={s.nav__item}><NavLink to='/about'>О компании</NavLink></div>
 				<div className={`${s.nav__item} ${s.nav__item__services}`}>
-					<NavLink to='/services'>Услуги</NavLink>
+					<NavLink to='/services' >Услуги</NavLink>
 					<div className={s.dropMenu} >
 						<div className={s.dropMenu__item}><NavLink to='/services/buildfiber'>Проектирование и строительство ВОЛС</NavLink></div>
 						<div className={s.dropMenu__item}><NavLink to='/services/mobilenetwork'>Проектирование и строительство объектов мобильной связи</NavLink></div>

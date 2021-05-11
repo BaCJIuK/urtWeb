@@ -1,0 +1,18 @@
+.flexImages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.mobileNetwork__item {
+	margin: 10px;
+}
+.mobileNetwork__item img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.mobileNetwork__item img:hover {
+	transform: scale(1.1);
+}

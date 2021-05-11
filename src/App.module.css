@@ -125,7 +125,9 @@ body {
 
 .content {
 	width: 1280px;
+	height: 100%;
 	margin-top: 20px;
+	font-family: LoraRegular;
 	padding: 20px 30px;
 	background: rgba(240, 248, 255, 0.95);
 }

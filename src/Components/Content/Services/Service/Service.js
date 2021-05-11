@@ -1,9 +1,16 @@
 import React from 'react'
+import s from './Service.module.css'
 
-const ServiceFiber = () => {
+const Services = () => {
 	return (
-		<div>ServiceFiber</div>
+		<div className={s.mobileNetwork}>
+			<h3 className={s.content__title}>Техническое обслуживание объектов фиксированной и мобильной связи</h3>
+			<p>Наша компания располагает всем необходимым (квалифицированный персонал, автомобильный парк, приборы и инструменты) для выполнения работ по техническому
+			обслуживанию объектов фиксированной и мобильной связи. В настоящее время наша компания обслуживает таких операторов, как ОАО Рентнет", ПАО "Вымпелком", и др.
+			</p>
+
+		</div >
 	)
 }
 
-export default ServiceFiber
+export default Services

@@ -1,0 +1,15 @@
+.alarmSystem__photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.alarmSystem__item img {
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.alarmSystem__item img:hover {
+	transform: scale(1.1);
+}

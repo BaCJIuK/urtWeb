@@ -1,0 +1,13 @@
+.lab__photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lab__item {
+	width: 250px;
+	transition: 0.5s;
+}
+
+.lab__item:hover {
+	transform: scale(1.1);
+}

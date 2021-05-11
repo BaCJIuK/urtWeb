@@ -1,0 +1,17 @@
+.flexImages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.buildFiber__item {
+	margin: 20px;
+	transition: 0.5s;
+}
+.buildFiber__item img {
+	width: 100%;
+}
+
+.buildFiber__item:hover {
+	transform: scale(1.1);
+}

@@ -1,8 +1,9 @@
 import React from 'react'
+import s from './Licenses.module.css'
 
 const Licenses = () => {
 	return (
-		<div>Licenses</div>
+		<div className={s.licenses}>Licenses</div>
 	)
 }
 
