@@ -48,7 +48,7 @@ header {
 .dropMenu {
 	position: absolute;
 	transform: translateX(-25%);
-	width: 300px;
+	width: 500px;
 	display: none;
 	animation: show;
 }
@@ -59,6 +59,11 @@ header {
 	text-align: left;
 	transition: 0.3s;
 }
+
+.dropMenu__item:first-child {
+	margin-top: 10px;
+}
+
 .dropMenu__item a {
 	padding: 7px 10px;
 }
@@ -72,6 +77,9 @@ header {
 .nav__item__services:hover .dropMenu {
 	display: block;
 	animation: show 0.5s;
+}
+.nav__item__services:hover > a {
+	color: white;
 }
 
 @keyframes show {

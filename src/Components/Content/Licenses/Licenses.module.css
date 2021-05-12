@@ -1,0 +1,22 @@
+.licenses {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.licenses__item {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.licenses__img {
+	flex: 0 0 auto;
+
+	margin-right: 20px;
+}
+
+.licenses__img img {
+}
+.licenses__discription {
+	align-self: center;
+}
