@@ -23,7 +23,8 @@ function App() {
       <div className={s.header} >
         <Header />
       </div>
-      <div className={s.content}>
+      {/*   <div className={s.content}>
+        <Route exact path='/' component={About} />
         <Route path='/about' component={About} />
         <Route path='/licenses' component={Licenses} />
         <Route path='/certificate' component={Certificate} />
@@ -35,7 +36,7 @@ function App() {
         <Route path='/services/service' component={Service} />
         <Route path='/services/alarmsystem' component={AlarmSystem} />
         <Route path='/services/servicefiber' component={ServiceFiber} />
-      </div>
+      </div> */}
     </div >
   );
 }
