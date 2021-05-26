@@ -147,6 +147,7 @@ header {
 	overflow: auto;
 	position: fixed;
 	background: white;
+
 	transform: translateX(200%);
 	top: 60px;
 	width: 50vw;
@@ -161,17 +162,36 @@ header {
 .burgerMenu a {
 	display: block;
 	font-family: "Bebas";
+	border-left: 20px solid #7fc0e0;
 	color: black;
 	font-size: 30px;
 	padding: 10px 20px;
 }
+.accordeonButton {
+	display: flex;
+	align-items: center;
+}
+
+.accordeonButton__arrow {
+	margin-left: 30px;
+	display: block;
+	width: 20px;
+	transform: rotate(-90deg);
+	transition: 0.3s;
+}
+.transformArrow {
+	transform: rotate(0deg);
+}
 
 .burgerMenu__dropMenu {
-	padding: 0 18px;
 	background-color: white;
 	max-height: 0;
 	overflow: hidden;
 	transition: 0.5s ease-out;
+}
+.dropMenuBurger__item a {
+	border-left: 20px solid #0e65bc;
+	padding-left: 40px;
 }
 
 .burgerMenu__open {

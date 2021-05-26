@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from './../../img/logo.jpg'
 import s from './Header.module.css'
+import blueArrowBurger from './../../img/common/blueArrowBurger.png'
 
 
 const Header = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState('')
-	const [accordionIsOpen, setAccordionIsOpen] = useState('true')
+	const [accordionIsOpen, setAccordionIsOpen] = useState('')
 
 	let toggleClass = () => {
 		setMenuIsOpen(!menuIsOpen)
@@ -50,7 +51,7 @@ const Header = () => {
 			<div className={`${s.burgerMenu} ${menuIsOpen ? s.burgerMenuOpen : ''}`}>
 				<div className={s.burgerMenu__item}><NavLink to='/about'>О компании</NavLink></div>
 				<div className={`${s.burgerMenu__item} ${s.burgerMenu__item__services}`} >
-					<div onClick={accordionOpen}><NavLink to='/services' >Услуги</NavLink></div>
+					<div className={s.accordeonButton} onClick={accordionOpen}><NavLink to='/services' >Услуги</NavLink><div ><img src={blueArrowBurger} className={`${s.accordeonButton__arrow} ${accordionIsOpen ? s.transformArrow : ''}`} /></div></div>
 					<div className={`${s.burgerMenu__dropMenu} ${accordionIsOpen ? s.burgerMenu__open : ''}`} >
 						<div className={s.dropMenuBurger__item}><NavLink to='/services/buildfiber'>Проектирование и строительство ВОЛС</NavLink></div>
 						<div className={s.dropMenuBurger__item}><NavLink to='/services/mobilenetwork'>Проектирование и строительство объектов мобильной связи</NavLink></div>
