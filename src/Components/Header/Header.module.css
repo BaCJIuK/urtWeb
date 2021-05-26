@@ -10,8 +10,12 @@ header {
 	background: white;
 	background: transparent;
 }
-.header__logo {
-	width: 250px;
+.header__logo a {
+	display: block;
+	background: url("./../../img/logo.jpg") no-repeat;
+	background-size: cover;
+	width: 270px;
+	height: 50px;
 }
 
 .nav {
@@ -147,7 +151,6 @@ header {
 	overflow: auto;
 	position: fixed;
 	background: white;
-
 	transform: translateX(200%);
 	top: 60px;
 	width: 50vw;
@@ -212,6 +215,30 @@ header {
 	}
 	.burgerMenuButton {
 		display: block;
+	}
+}
+@media (max-width: 658px) {
+	.burgerMenu {
+		width: 70vw;
+		transform: translateX(250%);
+	}
+
+	.burgerMenu.burgerMenuOpen {
+		transform: translateX(43%);
+	}
+
+	.burgerMenu a {
+		font-size: 21px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 370px) {
+	.header__logo a {
+		background: url("./../../img/simpleLogo.jpg") no-repeat;
+		background-size: cover;
+		width: 50px;
+		height: 50px;
 	}
 }
 

@@ -23,7 +23,7 @@ function App() {
       <div className={s.header} >
         <Header />
       </div>
-      {/*   <div className={s.content}>
+      {/* <div className={s.content}>
         <Route exact path='/' component={About} />
         <Route path='/about' component={About} />
         <Route path='/licenses' component={Licenses} />
