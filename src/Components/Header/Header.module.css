@@ -162,8 +162,22 @@ header {
 	display: block;
 	font-family: "Bebas";
 	color: black;
-	font-size: 22px;
+	font-size: 30px;
 	padding: 10px 20px;
+}
+
+.burgerMenu__dropMenu {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.5s ease-out;
+}
+
+.burgerMenu__open {
+	max-height: 2000px;
+	opacity: 1;
+	display: block;
 }
 
 /* /Меню */

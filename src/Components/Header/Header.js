@@ -6,10 +6,18 @@ import s from './Header.module.css'
 
 const Header = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState('')
+	const [accordionIsOpen, setAccordionIsOpen] = useState('true')
 
 	let toggleClass = () => {
 		setMenuIsOpen(!menuIsOpen)
 	}
+
+	let accordionOpen = () => {
+		setAccordionIsOpen(!accordionIsOpen)
+		console.log(accordionIsOpen);
+	}
+
+
 
 	return (
 		<header>
@@ -41,9 +49,9 @@ const Header = () => {
 			</div>
 			<div className={`${s.burgerMenu} ${menuIsOpen ? s.burgerMenuOpen : ''}`}>
 				<div className={s.burgerMenu__item}><NavLink to='/about'>О компании</NavLink></div>
-				<div className={`${s.burgerMenu__item} ${s.burgerMenu__item__services}`}>
-					<NavLink to='/services' >Услуги</NavLink>
-					<div className={s.burgerMenu__dropMenu} >
+				<div className={`${s.burgerMenu__item} ${s.burgerMenu__item__services}`} >
+					<div onClick={accordionOpen}><NavLink to='/services' >Услуги</NavLink></div>
+					<div className={`${s.burgerMenu__dropMenu} ${accordionIsOpen ? s.burgerMenu__open : ''}`} >
 						<div className={s.dropMenuBurger__item}><NavLink to='/services/buildfiber'>Проектирование и строительство ВОЛС</NavLink></div>
 						<div className={s.dropMenuBurger__item}><NavLink to='/services/mobilenetwork'>Проектирование и строительство объектов мобильной связи</NavLink></div>
 						<div className={s.dropMenuBurger__item}><NavLink to='/services/lab'>Электротехническая лаборатория</NavLink></div>
