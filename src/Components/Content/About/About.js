@@ -1,27 +1,10 @@
 import React from 'react'
 import s from './About.module.css'
-import office from './../../../img/organizationFoto/office.jpg'
-import storage from './../../../img/organizationFoto/storage.jpg'
-import storage2 from './../../../img/organizationFoto/storage2.jpg'
-import license1 from './../../../img/licenses/license1.jpg'
-import license2 from './../../../img/licenses/license2.jpg'
-import license3 from './../../../img/licenses/license3.jpg'
-import license4 from './../../../img/licenses/license4.jpg'
-import sertificate1 from './../../../img/certificate/certificate1.jpg'
-import sertificate2 from './../../../img/certificate/certificate2.jpg'
-import sertificate3 from './../../../img/certificate/certificate3.jpg'
-import sertificate4 from './../../../img/certificate/certificate4.jpg'
-import technic1 from './../../../img/technic/technic1.jpg'
-import technic2 from './../../../img/technic/technic2.jpg'
-import technic3 from './../../../img/technic/technic3.jpg'
-import camOnRoad from './../../../img/otherImage/camOnRoad.jpg'
-import cam from './../../../img/otherImage/cam.jpg'
-
-
-
+import * as Images from './../../assets/Imagies'
 
 
 const About = () => {
+
 	return (
 		<div className={s.about}>
 			<h3 className={s.about__title}>О компании</h3>
@@ -52,9 +35,9 @@ const About = () => {
 			</ul>
 			<p>ООО «Южрегионтелеком распологается на территории общей площадью 9500 кв.м.</p>
 			<div className={`${s.organizationFoto} ${s.flexImages}`}>
-				<div className={s.organizationFoto__item}><img src={office} /></div>
-				<div className={s.organizationFoto__item}><img src={storage} /></div>
-				<div className={s.organizationFoto__item}><img src={storage2} /></div>
+				{Images.organizationFoto.map(el => (
+					<div className={s.organizationFoto__item}><img src={el.default} /></div>
+				))}
 			</div>
 			<p>ООО «Южрегионтелеком» имеет все необходимые допуски и лицензии в том числе:</p>
 			<ul className={s.licenses}>
@@ -64,28 +47,27 @@ const About = () => {
 				<li className={s.licenses__item}>Лицензия МЧС</li>
 			</ul>
 			<div className={`${s.licenseImg} ${s.flexImages}`}>
-				<div className={s.licenseImg__item}><img src={license1} /></div>
-				<div className={s.licenseImg__item}><img src={license2} /></div>
-				<div className={s.licenseImg__item}><img src={license3} /></div>
-				<div className={s.licenseImg__item}><img src={license4} /></div>
+				{Images.licenses.map(el => (
+					<div className={s.licenseImg__item}><img src={el.default} /></div>
+				))}
 			</div>
 			<p>Для выполнения строительно-монтажных и пусконаладочных работ организовано 12 комплексных  бригад, оснащенных необходимыми инструментами, приспособлениями и  приборами. Все монтажники аттестованы для выполнения верхолазных работ, и имеют группу допуска по элетробезопасности</p>
 			<div className={`${s.certificates} ${s.flexImages}`}>
-				<div className={s.certificates__item}><img src={sertificate1} /></div>
-				<div className={s.certificates__item}><img src={sertificate2} /></div>
-				<div className={s.certificates__item}><img src={sertificate3} /></div>
-				<div className={s.certificates__item}><img src={sertificate4} /></div>
+				{Images.certificate.map(el => (
+					<div className={s.certificates__item}><img src={el.default} /></div>
+				))}
 			</div>
 			<p>Для строительства ВОЛС организовано две механизированные колонны, оснащенные современной строительной техникой, включая виброкабелеукладчики КВГ-2 и установки горизонтально-направленного бурения, а также трассопоисковое оборудование.</p>
 			<div className={`${s.technic} ${s.flexImages}`}>
-				<div className={s.technic__item}><img src={technic1} /></div>
-				<div className={s.technic__item}><img src={technic2} /></div>
-				<div className={s.technic__item}><img src={technic3} /></div>
+				{Images.technic.map(el => (
+					<div className={s.technic__item}><img src={el.default} /></div>
+				))}
 			</div>
 			<p>Последние три года наша компания активно участвует в строительстве систем автоматической фиксации нарушений ПДД в Краснодарском крае, Астраханской и Волгоградской областях в качестве субподрядной организации.</p>
 			<div className={`${s.otherImage} ${s.flexImages}`}>
-				<div className={s.otherImage__item}><img src={camOnRoad} /></div>
-				<div className={s.otherImage__item}><img src={cam} /></div>
+				{Images.otherImage.map(el => (
+					<div className={s.otherImage__item}><img src={el.default} /></div>
+				))}
 			</div>
 			<p>Выполнение работ по проектированию и строительству объектов в установленные договором подряда сроки происходит благодаря использованию современных технологий строительства, высокой квалификации специалистов, хорошей организации управления производством работ, современной системе менеджмента контроля качества.</p>
 			<p>Мы рады будем предоставить ВАМ полный комплекс услуг по проектированию, строительству, монтажу и техническому обслуживанию объектов связи, энергетики и других гражданских и промышленных объектов любой сложности.</p>
