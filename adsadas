@@ -1,0 +1,77 @@
+[33mcommit c2a1dec5a2c0dc63b015579231697827ca21b39b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Wed Jun 30 16:53:57 2021 +0300
+
+    refactoring imagies display with requared.context
+
+[33mcommit 778ae9a4dd1043340ddb123dacf8fcbc1b58bb67[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Wed May 26 17:30:57 2021 +0300
+
+    made adaptibility for the burger menu v1.2
+
+[33mcommit c515332151ed8f103684ecb8212e58d4b7244444[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Wed May 26 17:27:49 2021 +0300
+
+    made adaptibility for the burger menu
+
+[33mcommit f307e5f3a5a372db496637f379d2267ced33e20a[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Wed May 26 11:58:36 2021 +0300
+
+    was styled burger menu
+
+[33mcommit b12225ef7981951a7cc4bdfb0514d7364ecbac7a[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Wed May 26 11:26:50 2021 +0300
+
+    added accordeon on burger menu
+
+[33mcommit 026798a9d86b50e987ac0477f9546ddf90fddb95[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Tue May 25 13:26:09 2021 +0300
+
+    add burger menu
+
+[33mcommit 71a709d19b3f41daaf3141e781ae5561e344526a[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Wed May 12 15:56:24 2021 +0300
+
+    added full content
+
+[33mcommit 01adce4e9e8503f343bc1ee8088da6229557c77a[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Tue May 11 17:31:42 2021 +0300
+
+    finished filling dropdown menu
+
+[33mcommit de06d4d736e8d2d9ed2e479897af23d74ee7e8c4[m
+Author: Anton Sidorenko <urt.sidorenko@yandex.ru>
+Date:   Mon May 10 22:36:40 2021 +0300
+
+    add local class content
+
+[33mcommit 3661c61b45e319b3072a35d811f6948c976e97e8[m
+Author: Anton Sidorenko <urt.sidorenko@yandex.ru>
+Date:   Mon May 10 22:02:42 2021 +0300
+
+    little change
+
+[33mcommit f9f00d5031729c86946ac5be115cd8c80569baac[m
+Author: Anton Sidorenko <urt.sidorenko@yandex.ru>
+Date:   Mon May 10 21:55:57 2021 +0300
+
+    add dropDown menu
+
+[33mcommit 80b834dc04b375a1d2d02f9359a714f604ef0896[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Fri Apr 30 13:31:29 2021 +0300
+
+    filling about page
+
+[33mcommit 805908375a4515e6272bd87d4638ff1f3c64f45d[m
+Author: Anton <urt.sidorenko@yandex.ru>
+Date:   Thu Apr 29 17:48:51 2021 +0300
+
+    start project
