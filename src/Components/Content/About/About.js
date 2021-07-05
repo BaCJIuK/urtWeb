@@ -1,9 +1,21 @@
 import React from 'react'
 import s from './About.module.css'
 import * as Images from './../../assets/Imagies'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
+
 
 
 const About = () => {
+	let sliderSettings = {
+		className: "center",
+		centerMode: true,
+		infinite: true,
+		centerPadding: "60px",
+		slidesToShow: 2,
+		speed: 500,
+	}
 
 	return (
 		<div className={s.about}>
@@ -34,10 +46,21 @@ const About = () => {
 				<li className={s.partner__item}>Мобильные операторы республики Крым</li>
 			</ul>
 			<p>ООО «Южрегионтелеком распологается на территории общей площадью 9500 кв.м.</p>
-			<div className={`${s.organizationFoto} ${s.flexImages}`}>
-				{Images.organizationFoto.map(el => (
+			<div /* className={`${s.organizationFoto} ${s.flexImages}`} */>
+				{/* <div className={s.sliderContainer}>
+
+					<Slider {...sliderSettings} >
+						{Images.organizationFoto.map(el => (
+							<div className={s.sliderItem}>
+								<div className={s.organizationFoto__item}><img src={el.default} /></div>
+							</div>
+						))}
+					</Slider>
+
+				</div> */}
+				{/* {Images.organizationFoto.map(el => (
 					<div className={s.organizationFoto__item}><img src={el.default} /></div>
-				))}
+				))} */}
 			</div>
 			<p>ООО «Южрегионтелеком» имеет все необходимые допуски и лицензии в том числе:</p>
 			<ul className={s.licenses}>
