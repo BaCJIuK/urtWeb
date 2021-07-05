@@ -11,11 +11,12 @@ const About = () => {
 	let sliderSettings = {
 		infinite: true,
 		slidesToShow: 3,
-		speed: 500,
+		speed: 700,
 		centerMode: true,
-		arrows: false,
+		arrows: true,
 		autoplay: true,
 		autoplaySpeed: 3000,
+		cssEase: "linear",
 		responsive: [
 			{
 				breakpoint: 1280,

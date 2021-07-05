@@ -7,12 +7,15 @@ import certificateImg4 from './../../../img/certificate/certificate4.jpg'
 
 const Certificate = () => {
 	return (
+
+
 		<div className={s.certificate}>
 			<div className={s.certificate__item}><img src={certificateImg1} /></div>
 			<div className={s.certificate__item}><img src={certificateImg2} /></div>
 			<div className={s.certificate__item}><img src={certificateImg3} /></div>
 			<div className={s.certificate__item}><img src={certificateImg4} /></div>
 		</div>
+
 	)
 }
 
