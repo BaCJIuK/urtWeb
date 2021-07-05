@@ -1,9 +1,9 @@
-/* .about {
-	width: 1280px;
+.about {
+	max-width: 1280px;
 	margin-top: 20px;
-	padding: 20px 30px;
-	background: rgba(240, 248, 255, 0.95);
 }
+
+/* 
 .about p {
 	font-family: LoraRegular;
 	font-size: 1.1em;
@@ -34,7 +34,7 @@
 	background-size: cover;
 	left: -35px;
 	top: 3px;
-} */
+}  */
 
 .about__title {
 	margin-bottom: 10px;
@@ -53,13 +53,12 @@
 .flexImages div:hover {
 	transform: scale(1.1);
 }
-.organizationFoto__item {
-	max-width: 350px;
-}
-.organizationFoto__item img {
+
+/* .organizationFoto__item img {
 	max-width: 100%;
 	height: 100%;
-}
+} */
+
 .technic__item {
 	max-width: 350px;
 }
@@ -71,11 +70,27 @@
 /* slider style */
 
 .sliderContainer {
-	max-width: 100%;
 }
-.sliderItem {
-	max-width: 100%;
-	display: flex;
+
+.slide__item {
+	margin-right: 10px;
+}
+
+@media (max-width: 1280px) {
+	.sliderContainer {
+		margin: 0 auto;
+		max-width: 80vw;
+	}
+	.slide__item {
+	}
+	.slide__item img {
+		max-width: 100%;
+	}
+}
+@media (max-width: 670px) {
+	.slide__item {
+		margin-right: 0px;
+	}
 }
 
 /* /slider style */

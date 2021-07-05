@@ -33,7 +33,7 @@ const Header = () => {
 					<span></span>
 				</div>
 			</div>
-			<div className={`${s.burgerMenu} ${menuIsOpen ? s.burgerMenuOpen : ''}`}  >
+			{/* 	<div className={`${s.burgerMenu} ${menuIsOpen ? s.burgerMenuOpen : ''}`}  >
 				<div className={s.burgerMenu__item} onClick={toggleClass}><NavLink to='/about'>О компании</NavLink></div>
 				<div className={`${s.burgerMenu__item_accordeon} ${s.burgerMenu__item__services}`} >
 					<div className={s.accordeonButton} onClick={accordionOpen}><NavLink to='/services' >Услуги</NavLink><div ><img src={blueArrowBurger} className={`${s.accordeonButton__arrow} ${accordionIsOpen ? s.transformArrow : ''}`} /></div></div>
@@ -49,7 +49,7 @@ const Header = () => {
 				<div className={s.burgerMenu__item} onClick={toggleClass}><NavLink to='/licenses'>Лицензии</NavLink></div>
 				<div className={s.burgerMenu__item} onClick={toggleClass}><NavLink to='/certificate'>Сертификаты</NavLink></div>
 				<div className={s.burgerMenu__item} onClick={toggleClass}><NavLink to='/contact'>Контакты</NavLink></div>
-			</div>
+			</div> */}
 		</header >
 	)
 }

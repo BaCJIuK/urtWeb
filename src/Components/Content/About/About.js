@@ -9,12 +9,31 @@ import "slick-carousel/slick/slick-theme.css"
 
 const About = () => {
 	let sliderSettings = {
-		className: "center",
-		centerMode: true,
 		infinite: true,
-		centerPadding: "60px",
-		slidesToShow: 2,
+		slidesToShow: 3,
 		speed: 500,
+		centerMode: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		responsive: [
+			{
+				breakpoint: 1280,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					centerMode: false
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					infinite: true,
+					centerMode: false
+				}
+			}
+		]
 	}
 
 	return (
@@ -46,18 +65,24 @@ const About = () => {
 				<li className={s.partner__item}>Мобильные операторы республики Крым</li>
 			</ul>
 			<p>ООО «Южрегионтелеком распологается на территории общей площадью 9500 кв.м.</p>
-			<div /* className={`${s.organizationFoto} ${s.flexImages}`} */>
-				{/* <div className={s.sliderContainer}>
-
+			<div className={`${s.organizationFoto}`}>
+				<div className={s.sliderContainer}>
 					<Slider {...sliderSettings} >
 						{Images.organizationFoto.map(el => (
+							<div className={s.slide}>
+								<div className={s.slide__item}><img src={el.default} /></div>
+							</div>
+						))}
+
+
+						{/* {Images.organizationFoto.map(el => (
 							<div className={s.sliderItem}>
 								<div className={s.organizationFoto__item}><img src={el.default} /></div>
 							</div>
-						))}
+						))} */}
 					</Slider>
 
-				</div> */}
+				</div>
 				{/* {Images.organizationFoto.map(el => (
 					<div className={s.organizationFoto__item}><img src={el.default} /></div>
 				))} */}
