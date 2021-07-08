@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './About.module.css'
 import * as Images from './../../assets/Imagies'
 import Slider from 'react-slick'
@@ -7,7 +7,13 @@ import "slick-carousel/slick/slick-theme.css"
 
 
 
+
 const About = () => {
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	})
+
 	let sliderSettings = {
 		infinite: true,
 		slidesToShow: 3,
