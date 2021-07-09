@@ -2,17 +2,15 @@ import React, { useEffect } from 'react'
 import s from './About.module.css'
 import * as Images from './../../assets/Imagies'
 import Slider from 'react-slick'
+import withScrollToStartPage from './../../../hoc/withScrollToStartPage'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+import { compose } from 'redux'
 
 
 
 
 const About = () => {
-
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	})
 
 	let sliderSettings = {
 		infinite: true,
@@ -81,12 +79,6 @@ const About = () => {
 							</div>
 						))}
 
-
-						{/* {Images.organizationFoto.map(el => (
-							<div className={s.sliderItem}>
-								<div className={s.organizationFoto__item}><img src={el.default} /></div>
-							</div>
-						))} */}
 					</Slider>
 
 				</div>
@@ -132,4 +124,7 @@ const About = () => {
 	)
 }
 
-export default About
+
+
+export default compose(withScrollToStartPage)(About)
+

@@ -1,6 +1,8 @@
 import React from 'react'
 import s from './Licenses.module.css'
 import license1 from './../../../img/licenses/license1.jpg'
+import { compose } from 'redux'
+import withScrollToStartPage from '../../../hoc/withScrollToStartPage'
 
 const Licenses = () => {
 	return (
@@ -33,4 +35,4 @@ const Licenses = () => {
 	)
 }
 
-export default Licenses
+export default compose(withScrollToStartPage)(Licenses)
