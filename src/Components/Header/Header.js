@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from './../../img/logo.jpg'
 import s from './Header.module.css'
 import blueArrowBurger from './../../img/common/blueArrowBurger.png'
 import clock from './../../img/common/clock.png'
@@ -19,8 +18,6 @@ const Header = () => {
 		setAccordionIsOpen(!accordionIsOpen)
 
 	}
-
-
 
 
 	return (

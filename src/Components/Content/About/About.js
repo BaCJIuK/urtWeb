@@ -6,6 +6,7 @@ import withScrollToStartPage from './../../../hoc/withScrollToStartPage'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import { compose } from 'redux'
+import ServicesOnAboutPage from './ServicesInAbout/ServicesOnAboutPage'
 
 
 
@@ -53,6 +54,7 @@ const About = () => {
 			строительных и инженерных работ на территории России.
 			</p><br />
 			<p>Приоритетными направлениями компании являются:</p>
+			<ServicesOnAboutPage />
 			<ul className={s.priority}>
 				<li className={s.priority__item}>проектирование и строительство объектов мобильной связи;</li>
 				<li className={s.priority__item}>проектирование и строительство волоконно-оптических линий связи;</li>
