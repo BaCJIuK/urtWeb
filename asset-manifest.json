@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/urtWeb/static/css/main.a27fc586.chunk.css",
-    "main.js": "/urtWeb/static/js/main.7a6ddf3d.chunk.js",
-    "main.js.map": "/urtWeb/static/js/main.7a6ddf3d.chunk.js.map",
-    "runtime-main.js": "/urtWeb/static/js/runtime-main.2cc0bcd8.js",
-    "runtime-main.js.map": "/urtWeb/static/js/runtime-main.2cc0bcd8.js.map",
+    "main.js": "/urtWeb/static/js/main.4dc290d8.chunk.js",
+    "main.js.map": "/urtWeb/static/js/main.4dc290d8.chunk.js.map",
+    "runtime-main.js": "/urtWeb/static/js/runtime-main.6cc54333.js",
+    "runtime-main.js.map": "/urtWeb/static/js/runtime-main.6cc54333.js.map",
     "static/css/2.b22056c4.chunk.css": "/urtWeb/static/css/2.b22056c4.chunk.css",
-    "static/js/2.a53a42af.chunk.js": "/urtWeb/static/js/2.a53a42af.chunk.js",
-    "static/js/2.a53a42af.chunk.js.map": "/urtWeb/static/js/2.a53a42af.chunk.js.map",
-    "static/js/3.fded451f.chunk.js": "/urtWeb/static/js/3.fded451f.chunk.js",
-    "static/js/3.fded451f.chunk.js.map": "/urtWeb/static/js/3.fded451f.chunk.js.map",
+    "static/js/2.5479e8be.chunk.js": "/urtWeb/static/js/2.5479e8be.chunk.js",
+    "static/js/2.5479e8be.chunk.js.map": "/urtWeb/static/js/2.5479e8be.chunk.js.map",
+    "static/js/3.084763c6.chunk.js": "/urtWeb/static/js/3.084763c6.chunk.js",
+    "static/js/3.084763c6.chunk.js.map": "/urtWeb/static/js/3.084763c6.chunk.js.map",
     "index.html": "/urtWeb/index.html",
     "static/css/2.b22056c4.chunk.css.map": "/urtWeb/static/css/2.b22056c4.chunk.css.map",
     "static/css/main.a27fc586.chunk.css.map": "/urtWeb/static/css/main.a27fc586.chunk.css.map",
-    "static/js/2.a53a42af.chunk.js.LICENSE.txt": "/urtWeb/static/js/2.a53a42af.chunk.js.LICENSE.txt",
+    "static/js/2.5479e8be.chunk.js.LICENSE.txt": "/urtWeb/static/js/2.5479e8be.chunk.js.LICENSE.txt",
     "static/media/App.module.css": "/urtWeb/static/media/fonV2.b4c34d84.jpg",
     "static/media/buildFiber1.jpg": "/urtWeb/static/media/buildFiber1.c342e4af.jpg",
     "static/media/buildFiber2.jpg": "/urtWeb/static/media/buildFiber2.0b6529a6.jpg",
@@ -40,10 +40,10 @@
     "static/media/technic2.jpg": "/urtWeb/static/media/technic2.0b6529a6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cc0bcd8.js",
+    "static/js/runtime-main.6cc54333.js",
     "static/css/2.b22056c4.chunk.css",
-    "static/js/2.a53a42af.chunk.js",
+    "static/js/2.5479e8be.chunk.js",
     "static/css/main.a27fc586.chunk.css",
-    "static/js/main.7a6ddf3d.chunk.js"
+    "static/js/main.4dc290d8.chunk.js"
   ]
 }
