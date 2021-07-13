@@ -2,45 +2,117 @@
 }
 .services__row {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+
 	/* border: 1px solid black; */
 }
 .services__item {
-	width: 300px;
-	height: 300px;
-	flex: 0 0 33%;
+	max-width: 400px;
+	height: 350px;
+	margin-bottom: 10px;
 	/* border: 1px solid black; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
+	transition: 0.5s;
+	cursor: pointer;
 }
 
 .services__content {
 	position: absolute;
-	width: 230px;
-	height: 230px;
+	width: 100%;
+	height: 100%;
 	/* border: 1px solid black; */
-	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.services__content_background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
 	transition: 0.5s;
 }
 .services__text {
+	position: relative;
 	z-index: 1;
-	font-size: 15px;
-	color: green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 12px;
 	text-align: center;
 }
 
-.services__content_mobileNetwork {
-	background: url("https://static.tildacdn.com/tild6638-3339-4237-b561-616165643831/_.jpg") center;
+.services__text h3::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 230px;
+	height: 4px;
+	background: blue;
 }
-.services__item:hover .services__content {
-	width: 500px;
-	height: 500px;
+.services__text h3 {
+	position: relative;
+	padding-bottom: 40px;
+}
+.services__text p {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px 10px 0px 10px;
 }
 
+.services__content_mobileNetwork {
+	background: url("./../../../../img/servicesOnAboutPage/mobileNetwork.jpg") center no-repeat;
+}
 .services__content_buildFiber {
+	background: url("./../../../../img/servicesOnAboutPage/fiber.jpg") center;
 }
 
 .services__content_alarmSystem {
+	background: url("./../../../../img/servicesOnAboutPage/alarmSystem.jpg") center;
+}
+
+.services__content_service {
+	background: url("./../../../../img/servicesOnAboutPage/service.jpg") center;
+}
+.services__content_servicefiber {
+	background: url("https://1enter.net/upload/iblock/4f9/4f9cf9a735bc2caa30d9a69b442a3bef.jpg") center;
+}
+.services__content_lab {
+	background: url("./../../../../img/servicesOnAboutPage/lab.jpg") center;
+	background-size: cover;
+}
+.services__item:hover .services__content_background {
+	background: none;
+}
+
+@media (max-width: 1280px) {
+	.services__row {
+		justify-content: center;
+		align-items: center;
+	}
+	.services__item {
+		margin-right: 10px;
+		border: 1px solid black;
+	}
+}
+@media (max-width: 880px) {
+	.services__item {
+		max-width: 300px;
+		height: 300px;
+	}
+}
+@media (max-width: 666px) {
+	.services__item {
+		margin-right: 0px;
+	}
 }
