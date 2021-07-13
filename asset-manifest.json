@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/urtWeb/static/css/main.34d477d0.chunk.css",
-    "main.js": "/urtWeb/static/js/main.638860bd.chunk.js",
-    "main.js.map": "/urtWeb/static/js/main.638860bd.chunk.js.map",
-    "runtime-main.js": "/urtWeb/static/js/runtime-main.6cc54333.js",
-    "runtime-main.js.map": "/urtWeb/static/js/runtime-main.6cc54333.js.map",
+    "main.css": "/urtWeb/static/css/main.f10af6c1.chunk.css",
+    "main.js": "/urtWeb/static/js/main.737973a7.chunk.js",
+    "main.js.map": "/urtWeb/static/js/main.737973a7.chunk.js.map",
+    "runtime-main.js": "/urtWeb/static/js/runtime-main.38ec419e.js",
+    "runtime-main.js.map": "/urtWeb/static/js/runtime-main.38ec419e.js.map",
     "static/css/2.b22056c4.chunk.css": "/urtWeb/static/css/2.b22056c4.chunk.css",
-    "static/js/2.5479e8be.chunk.js": "/urtWeb/static/js/2.5479e8be.chunk.js",
-    "static/js/2.5479e8be.chunk.js.map": "/urtWeb/static/js/2.5479e8be.chunk.js.map",
-    "static/js/3.084763c6.chunk.js": "/urtWeb/static/js/3.084763c6.chunk.js",
-    "static/js/3.084763c6.chunk.js.map": "/urtWeb/static/js/3.084763c6.chunk.js.map",
+    "static/js/2.ba5542b3.chunk.js": "/urtWeb/static/js/2.ba5542b3.chunk.js",
+    "static/js/2.ba5542b3.chunk.js.map": "/urtWeb/static/js/2.ba5542b3.chunk.js.map",
+    "static/js/3.ea566d86.chunk.js": "/urtWeb/static/js/3.ea566d86.chunk.js",
+    "static/js/3.ea566d86.chunk.js.map": "/urtWeb/static/js/3.ea566d86.chunk.js.map",
     "index.html": "/urtWeb/index.html",
     "static/css/2.b22056c4.chunk.css.map": "/urtWeb/static/css/2.b22056c4.chunk.css.map",
-    "static/css/main.34d477d0.chunk.css.map": "/urtWeb/static/css/main.34d477d0.chunk.css.map",
-    "static/js/2.5479e8be.chunk.js.LICENSE.txt": "/urtWeb/static/js/2.5479e8be.chunk.js.LICENSE.txt",
+    "static/css/main.f10af6c1.chunk.css.map": "/urtWeb/static/css/main.f10af6c1.chunk.css.map",
+    "static/js/2.ba5542b3.chunk.js.LICENSE.txt": "/urtWeb/static/js/2.ba5542b3.chunk.js.LICENSE.txt",
     "static/media/App.module.css": "/urtWeb/static/media/fonV2.b4c34d84.jpg",
+    "static/media/ServicesOnAboutPage.module.css": "/urtWeb/static/media/service.ba3e4872.jpg",
     "static/media/buildFiber1.jpg": "/urtWeb/static/media/buildFiber1.c342e4af.jpg",
     "static/media/buildFiber2.jpg": "/urtWeb/static/media/buildFiber2.0b6529a6.jpg",
     "static/media/buildFiber3.jpg": "/urtWeb/static/media/buildFiber3.36865c04.jpg",
@@ -41,10 +42,10 @@
     "static/media/technic2.jpg": "/urtWeb/static/media/technic2.0b6529a6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6cc54333.js",
+    "static/js/runtime-main.38ec419e.js",
     "static/css/2.b22056c4.chunk.css",
-    "static/js/2.5479e8be.chunk.js",
-    "static/css/main.34d477d0.chunk.css",
-    "static/js/main.638860bd.chunk.js"
+    "static/js/2.ba5542b3.chunk.js",
+    "static/css/main.f10af6c1.chunk.css",
+    "static/js/main.737973a7.chunk.js"
   ]
 }
