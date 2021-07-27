@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import { compose } from 'redux'
 import ServicesOnAboutPage from './ServicesInAbout/ServicesOnAboutPage'
+import AboutHeader from './AboutHeader/AboutHeader'
 
 
 
@@ -44,6 +45,7 @@ const About = () => {
 
 	return (
 		<div className={s.about}>
+			<AboutHeader />
 			<h3 className={s.about__title}>О компании</h3>
 			<p>ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
 			прочно укрепилось  на рынке проектирования, строительства и технического
