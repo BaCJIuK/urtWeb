@@ -1,15 +1,26 @@
-header {
-	position: static;
+/* header {
+	position: relative;
 	width: 100vw;
 	height: 100px;
-	/* 	display: flex;
-	justify-content: space-between; */
+		display: flex;
+	justify-content: space-between;
 	padding: 0px 30px;
 	padding-bottom: 0px;
 	align-items: center;
 	background: white;
-	background: transparent;
 	box-shadow: 0px 0px 10px black;
+} */
+
+.mainHeader {
+	/* display: flex;
+	justify-content: center; */
+	width: 100vw;
+	background: white;
+	position: absolute;
+	padding: 0px 30px;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
 }
 .header__top {
 	display: flex;

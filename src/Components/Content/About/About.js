@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import s from './About.module.css'
 import * as Images from './../../assets/Imagies'
 import Slider from 'react-slick'
@@ -13,6 +13,8 @@ import AboutHeader from './AboutHeader/AboutHeader'
 
 
 const About = () => {
+
+	let aboutCompany = useRef()
 
 	let sliderSettings = {
 		infinite: true,
@@ -45,9 +47,9 @@ const About = () => {
 
 	return (
 		<div className={s.about}>
-			<AboutHeader />
+			<AboutHeader aboutCompanyRef={aboutCompany} />
 			<h3 className={s.about__title}>О компании</h3>
-			<p>ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
+			<p ref={aboutCompany}>ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
 			прочно укрепилось  на рынке проектирования, строительства и технического
 			обслуживания объектов и сооружений связи, энергетики и других гражданских
 			и промышленных объектов любой сложности. ООО «Южрегионтелеком» сегодня -
