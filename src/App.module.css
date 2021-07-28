@@ -104,10 +104,13 @@ a {
 	src: url(./fonts/GoodTime.otf);
 }
 
+/* Шрифты для заголовков */
+
 @font-face {
-	font-family: Furore;
-	src: url(./fonts/Furore.otf);
+	font-family: PlayfairDisplaySC;
+	src: url(./fonts/PlayfairDisplaySC.ttf);
 }
+/* /шрифты для заголовков */
 
 body {
 	/* max-width: 100vw; */

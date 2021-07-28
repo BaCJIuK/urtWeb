@@ -9,6 +9,7 @@ header {
 	align-items: center;
 	background: white;
 	background: transparent;
+	box-shadow: 0px 0px 10px black;
 }
 .header__top {
 	display: flex;
