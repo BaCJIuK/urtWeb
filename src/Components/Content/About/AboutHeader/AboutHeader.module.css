@@ -28,7 +28,7 @@
 
 .content__item {
 	position: absolute;
-	width: 800px;
+	width: 900px;
 	text-align: center;
 	z-index: 1;
 	top: 15%;
@@ -36,7 +36,7 @@
 }
 .content__item h1 {
 	font-family: PlayfairDisplaySC;
-	font-size: 50px;
+	font-size: 62px;
 	margin-bottom: 30px;
 }
 .content__item h3 {
@@ -57,6 +57,28 @@
 }
 .content__button:focus {
 	border: 1px solid black;
+}
+.scrollIcon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 140%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: scrollIconAnimation 0.7s infinite alternate ease;
+}
+.scrollIcon__mouse {
+	margin-bottom: 30px;
+}
+@keyframes scrollIconAnimation {
+	o% {
+		top: 145%;
+	}
+	100% {
+		top: 135%;
+	}
 }
 
 @keyframes pulse {

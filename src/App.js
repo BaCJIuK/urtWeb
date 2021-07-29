@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './App.module.css';
 import Header from './Components/Header/Header';
 import { Route } from 'react-router-dom';
@@ -14,11 +14,21 @@ import Lab from './Components/Content/Services/Lab/Lab';
 import Service from './Components/Content/Services/Service/Service';
 import AlarmSystem from './Components/Content/Services/AlarmSystem/AlarmSystem';
 import ServiceFiber from './Components/Content/Services/ServiceFiber/ServiceFiber';
+import 'aos/dist/aos.css'
+import AOS from 'aos'
 
 
 
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    })
+  }, [])
+
+
   return (
     <div className={s.wrapper}>
       <div className={s.header} >

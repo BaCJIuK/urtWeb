@@ -11,6 +11,7 @@ import { create } from 'jss'
 const jss = create({
   plugins: [...jssPreset().plugins, rtl()]
 })
+
 ReactDOM.render(
   <StylesProvider jss={jss} injectFirst>
     <BrowserRouter basename={process.env.PUBLIC_URL}>

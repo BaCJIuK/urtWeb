@@ -15,13 +15,41 @@
 	/* display: flex;
 	justify-content: center; */
 	width: 100vw;
-	background: white;
+
+	/* background: white; */
 	position: absolute;
-	padding: 0px 30px;
+	padding: 10px 30px;
 	top: 0px;
 	left: 0px;
 	z-index: 100;
 }
+
+/* SmallHeader */
+.smallHeader {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.smallHeader__wrapper {
+	background: white;
+	box-shadow: 0px 1px 5px black;
+	padding: 10px;
+	width: 35vw;
+	display: flex;
+	justify-content: space-around;
+}
+.smallHeader a {
+	font-family: "Bebas";
+	font-size: 20px;
+	color: black;
+}
+
+/* /SmallHeader */
 .header__top {
 	display: flex;
 	padding-top: 5px;
@@ -56,7 +84,7 @@
 }
 .header__logo a {
 	display: block;
-	background: url("./../../img/logo.jpg") no-repeat;
+	background: url("./../../img/logo.png") no-repeat;
 	background-size: cover;
 	width: 270px;
 	height: 50px;
@@ -70,6 +98,7 @@
 }
 
 .nav__item {
+	position: relative;
 	text-align: center;
 	height: 100%;
 	transition: 0.3s;
@@ -78,29 +107,37 @@
 .nav__item a {
 	display: block;
 	font-family: "Bebas";
-	color: black;
+	color: white;
 	font-size: 22px;
 	padding: 0px 20px;
 }
 
-.nav__item:hover {
-	background: #2e9cdb;
+.nav__item a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: 0.3s ease;
+	opacity: 0;
 }
 
-.nav__item a:hover {
-	color: white;
+.nav__item a:hover:after {
+	width: 100%;
+	opacity: 1;
 }
-.nav__item__services {
+
+/* .nav__item__services {
 	position: relative;
-}
-.dropMenu {
+} */
+/* .dropMenu {
 	position: absolute;
 	transform: translateX(-25%);
 	width: 500px;
 	display: none;
 	animation: show;
-}
-.dropMenu__item {
+} */
+/* .dropMenu__item {
 	display: block;
 	line-height: 1.2;
 	background: white;
@@ -120,15 +157,15 @@
 }
 .dropMenu__item a:hover {
 	color: white;
-}
+} */
 
-.nav__item__services:hover .dropMenu {
+/* .nav__item__services:hover .dropMenu {
 	display: block;
 	animation: show 0.5s;
 }
 .nav__item__services:hover > a {
 	color: white;
-}
+} */
 
 /* 
 Бургер меню
@@ -301,9 +338,9 @@
 	}
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
 	.header__logo a {
-		background: url("./../../img/simpleLogo.jpg") no-repeat;
+		background: url("./../../img/simpleLogo.png") no-repeat;
 		background-size: cover;
 		width: 50px;
 		height: 50px;
