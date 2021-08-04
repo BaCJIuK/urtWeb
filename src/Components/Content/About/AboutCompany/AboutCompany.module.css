@@ -1,0 +1,21 @@
+.aboutCompany {
+}
+
+.aboutCompany__header {
+	display: flex;
+	justify-content: center;
+}
+.aboutCompany__content {
+	justify-content: space-around;
+	display: flex;
+}
+.aboutCompany__item {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

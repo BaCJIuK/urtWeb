@@ -9,6 +9,8 @@ import { compose } from 'redux'
 import ServicesOnAboutPage from './ServicesInAbout/ServicesOnAboutPage'
 import AboutHeader from './AboutHeader/AboutHeader'
 import { Container } from '@material-ui/core'
+import AboutCompany from './AboutCompany/AboutCompany'
+import VisibilitySensor from 'react-visibility-sensor'
 
 
 
@@ -18,7 +20,7 @@ const About = () => {
 
 	let aboutCompany = useRef()
 
-
+	console.log('RENDER');
 
 	let sliderSettings = {
 		infinite: true,
@@ -49,10 +51,17 @@ const About = () => {
 		]
 	}
 
+
+
 	return (
 		<div className={s.about}>
 			<AboutHeader aboutCompanyRef={aboutCompany} />
 			<Container >
+				<AboutCompany />
+				{/* <VisibilitySensor onChange={onChange}>
+					<AboutCompany />
+				</VisibilitySensor> */}
+
 				<h3 className={s.about__title} ref={aboutCompany} data-aos="fade-left" >О компании</h3 >
 				<p data-aos="fade-left" >ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
 				прочно укрепилось  на рынке проектирования, строительства и технического
