@@ -4,6 +4,7 @@
 .aboutCompany__header {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 30px;
 }
 .aboutCompany__content {
 	justify-content: space-around;
@@ -11,11 +12,41 @@
 }
 .aboutCompany__item {
 	width: 200px;
-	height: 200px;
-	border: 1px solid black;
+	min-height: 200px;
 	border-radius: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.aboutCompany__img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 30px;
+}
+.aboutCompany__graph {
+	background: url(../../../../img/aboutCompany/graph.png);
+	background-size: cover;
+}
+.aboutCompany__bulldozer {
+	background: url(../../../../img/aboutCompany/bulldozer.png);
+	background-size: cover;
+}
+.aboutCompany__mobileTower {
+	background: url(../../../../img/aboutCompany/cellToward.png);
+	background-size: cover;
+}
+
+.aboutCompany__service {
+	background: url(../../../../img/aboutCompany/service.png);
+	background-size: cover;
+}
+.aboutCompany__counter {
+}
+.aboutCompany__counter span {
+	font-size: 20px;
+}
+.aboutCompany__discription {
+	font-size: 18px;
+	text-align: center;
 }

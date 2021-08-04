@@ -57,13 +57,11 @@ const About = () => {
 		<div className={s.about}>
 			<AboutHeader aboutCompanyRef={aboutCompany} />
 			<Container >
-				<AboutCompany />
-				{/* <VisibilitySensor onChange={onChange}>
+				<div ref={aboutCompany}>
 					<AboutCompany />
-				</VisibilitySensor> */}
-
-				<h3 className={s.about__title} ref={aboutCompany} data-aos="fade-left" >О компании</h3 >
-				<p data-aos="fade-left" >ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
+				</div>
+				<h3 className={s.about__title} >О компании</h3 >
+				<p  >ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
 				прочно укрепилось  на рынке проектирования, строительства и технического
 				обслуживания объектов и сооружений связи, энергетики и других гражданских
 				и промышленных объектов любой сложности. ООО «Южрегионтелеком» сегодня -
