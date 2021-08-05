@@ -44,7 +44,6 @@
 	justify-content: space-around;
 }
 .smallHeader a {
-	font-family: "Bebas";
 	font-size: 20px;
 	color: black;
 }
@@ -106,7 +105,6 @@
 
 .nav__item a {
 	display: block;
-	font-family: "Bebas";
 	color: white;
 	font-size: 22px;
 	padding: 0px 20px;
@@ -245,7 +243,6 @@
 
 .burgerMenu a {
 	display: block;
-	font-family: "Bebas";
 	border-left: 20px solid #7fc0e0;
 	color: black;
 	font-size: 30px;

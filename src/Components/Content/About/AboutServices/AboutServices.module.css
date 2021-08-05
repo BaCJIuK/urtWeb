@@ -1,0 +1,17 @@
+.AboutServices {
+}
+.servicesItem {
+	display: flex;
+	height: 500px;
+	border: 1px solid black;
+}
+.servicesItem__image {
+	flex: 0 0 50%;
+	overflow: hidden;
+	height: 100%;
+}
+.servicesItem__image img {
+}
+.servicesItem__text {
+	flex: 0 0 50%;
+}

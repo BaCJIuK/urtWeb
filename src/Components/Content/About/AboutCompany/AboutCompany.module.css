@@ -6,9 +6,12 @@
 	justify-content: center;
 	margin-bottom: 30px;
 }
+
 .aboutCompany__content {
 	justify-content: space-around;
 	display: flex;
+}
+.aboutCompany__about {
 }
 .aboutCompany__item {
 	width: 200px;
@@ -20,8 +23,8 @@
 	justify-content: center;
 }
 .aboutCompany__img {
-	width: 100px;
-	height: 100px;
+	width: 130px;
+	height: 130px;
 	margin-bottom: 30px;
 }
 .aboutCompany__graph {
@@ -44,9 +47,9 @@
 .aboutCompany__counter {
 }
 .aboutCompany__counter span {
-	font-size: 20px;
+	font-size: 25px;
 }
 .aboutCompany__discription {
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
 }

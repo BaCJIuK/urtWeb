@@ -18,7 +18,7 @@ const AboutHeader = (props) => {
 			<div className={s.content}>
 				<div className={s.content__item}>
 					<h1>Проектирование и строительство объектов связи любой сложности</h1>
-					<h3>более 20 лет на рынке</h3>
+					{/* <h3>более 20 лет на рынке</h3> */}
 					<Button onClick={() => scrollToTarger(props.aboutCompanyRef)} className={s.content__button} variant='outlined' size='large' color='primary'>
 						подробнее
 					</Button>
