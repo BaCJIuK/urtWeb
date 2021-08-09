@@ -125,9 +125,11 @@ a {
 body {
 	/* max-width: 100vw; */
 	height: 100vh;
-	background: rgba(240, 248, 255, 0.95);
+	/* background: rgba(240, 248, 255, 0.95); */
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+	background: url("./img/AboutHeader/background.jpg") no-repeat;
 	background-attachment: fixed;
 }
 div,
@@ -154,8 +156,9 @@ button {
 	max-width: 100vw;
 	height: 100%;
 	margin: 0px auto;
+	background: rgba(0, 0, 0, 0.6);
 	/* padding: 20px 30px; */
-	background: rgba(240, 248, 255, 0.95);
+	/* background: rgba(240, 248, 255, 0.95); */
 }
 
 .content p {
@@ -165,7 +168,6 @@ button {
 }
 .content ul {
 	list-style: none;
-
 	font-size: 1.1em;
 }
 .content li {

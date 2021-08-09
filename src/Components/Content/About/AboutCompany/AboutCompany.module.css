@@ -1,5 +1,18 @@
 .aboutCompany {
-	margin-bottom: 150px;
+	margin: 0px 20px 150px 20px;
+	padding: 40px 0px;
+	/* 	background: #ededed; */
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.5) 0%,
+		rgba(255, 255, 255, 0.5) 5%,
+		white 31%,
+		white 70%,
+		rgba(255, 255, 255, 0.5) 95%,
+		rgba(255, 255, 255, 0.5) 100%
+	);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px white;
 }
 
 .aboutCompany__header {
