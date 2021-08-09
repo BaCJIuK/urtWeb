@@ -95,49 +95,79 @@ a {
 	font-family: LoraRegular;
 	src: url(./fonts/LoraRegular.ttf);
 }
+@font-face {
+	font-family: LombardinaTwo;
+	src: url(./fonts/LombardinaTwo.ttf);
+}
+@font-face {
+	font-family: GoodTime;
+	src: url(./fonts/GoodTime.otf);
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src: url(./fonts/RobotoRegular.ttf);
+}
+
+/* Шрифты для заголовков */
+
+@font-face {
+	font-family: PlayfairDisplaySC;
+	src: url(./fonts/PlayfairDisplaySC.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(./fonts/RobotoBold.ttf);
+}
+/* /шрифты для заголовков */
 
 body {
 	/* max-width: 100vw; */
 	height: 100vh;
-	background: url(./img/fonV2.jpg) no-repeat;
+	/* background: rgba(240, 248, 255, 0.95); */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	background: url("./img/AboutHeader/background.jpg") no-repeat;
+	background-attachment: fixed;
+}
+div,
+span,
+p,
+li {
+	font-family: RobotoRegular;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	font-family: RobotoBold;
 }
 
 .wrapper {
 	margin: 0 auto;
 }
-.header {
-	display: flex;
-	justify-content: center;
-	max-width: 100%;
-	background: white;
-	position: sticky;
-	top: 0px;
-	left: 0px;
-	z-index: 100;
-}
 
 .content {
-	max-width: 1280px;
-	/* max-width: 100vw; */
+	max-width: 100vw;
 	height: 100%;
 	margin: 0px auto;
-	font-family: LoraRegular;
-	padding: 20px 30px;
-	background: rgba(240, 248, 255, 0.95);
+	background: rgba(0, 0, 0, 0.6);
+	/* padding: 20px 30px; */
+	/* background: rgba(240, 248, 255, 0.95); */
 }
 
 .content p {
-	font-family: LoraRegular;
 	font-size: 1.1em;
 	text-align: justify;
 	margin-bottom: 10px;
 }
 .content ul {
 	list-style: none;
-	font-family: LoraRegular;
 	font-size: 1.1em;
 }
 .content li {
@@ -164,5 +194,4 @@ body {
 .content h3 {
 	margin-bottom: 10px;
 	font-size: 1.9em;
-	font-family: SourceSansProBold;
 }

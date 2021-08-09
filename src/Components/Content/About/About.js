@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import s from './About.module.css'
 import * as Images from './../../assets/Imagies'
 import Slider from 'react-slick'
@@ -6,12 +6,22 @@ import withScrollToStartPage from './../../../hoc/withScrollToStartPage'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import { compose } from 'redux'
-import ServicesOnAboutPage from './ServicesInAbout/ServicesOnAboutPage'
+import AboutServices from './AboutServices/AboutServices'
+import AboutHeader from './AboutHeader/AboutHeader'
+import { Container } from '@material-ui/core'
+import AboutCompany from './AboutCompany/AboutCompany'
+import VisibilitySensor from 'react-visibility-sensor'
+import AboutPartners from './AboutPartners/AboutPartners'
+
 
 
 
 
 const About = () => {
+
+	let aboutCompany = useRef()
+
+	console.log('RENDER');
 
 	let sliderSettings = {
 		infinite: true,
@@ -42,19 +52,19 @@ const About = () => {
 		]
 	}
 
+
+
 	return (
 		<div className={s.about}>
-			<h3 className={s.about__title}>О компании</h3>
-			<p>ООО «Южрегионтелеком» основано 09 апреля 1999 года, и за прошедший период
-			прочно укрепилось  на рынке проектирования, строительства и технического
-			обслуживания объектов и сооружений связи, энергетики и других гражданских
-			и промышленных объектов любой сложности. ООО «Южрегионтелеком» сегодня -
-			это современная российская компания, обладающая необходимыми людскими,
-			финансовыми и техническими ресурсами для выполнения комплекса проектных,
-			строительных и инженерных работ на территории России.
-			</p><br />
-			<p>Приоритетными направлениями компании являются:</p>
-			<ServicesOnAboutPage />
+			<AboutHeader aboutCompanyRef={aboutCompany} />
+
+			<div ref={aboutCompany}>
+				<AboutCompany />
+				<div><a href="https://api.whatsapp.com/send?phone=+79508458931" target="_blank" class="fa fa-viber" title="whats app">ВОТСАП</a></div>
+			</div>
+			<AboutServices />
+			<AboutPartners />
+
 			<ul className={s.priority}>
 				<li className={s.priority__item}>проектирование и строительство объектов мобильной связи;</li>
 				<li className={s.priority__item}>проектирование и строительство волоконно-оптических линий связи;</li>
@@ -77,7 +87,7 @@ const About = () => {
 					<Slider {...sliderSettings} >
 						{Images.organizationFoto.map(el => (
 							<div className={s.slide}>
-								<div className={s.slide__item}><img src={el.default} /></div>
+								<div className={s.slide__item} ><img src={el.default} /></div>
 							</div>
 						))}
 

@@ -4,15 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { jssPreset, StylesProvider } from '@material-ui/core';
+import rtl from 'jss-rtl'
+import { create } from 'jss'
 
-
+const jss = create({
+  plugins: [...jssPreset().plugins, rtl()]
+})
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>
+  <StylesProvider jss={jss} injectFirst>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>
+  </StylesProvider>
   ,
   document.getElementById('root')
 );
