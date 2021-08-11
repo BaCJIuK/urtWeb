@@ -17,11 +17,11 @@ import AboutPartners from './AboutPartners/AboutPartners'
 
 
 
+
 const About = () => {
 
 	let aboutCompany = useRef()
 
-	console.log('RENDER');
 
 	let sliderSettings = {
 		infinite: true,
@@ -62,7 +62,9 @@ const About = () => {
 				<AboutCompany />
 				<div><a href="https://api.whatsapp.com/send?phone=+79508458931" target="_blank" class="fa fa-viber" title="whats app">ВОТСАП</a></div>
 			</div>
+
 			<AboutServices />
+
 			<AboutPartners />
 
 			<ul className={s.priority}>

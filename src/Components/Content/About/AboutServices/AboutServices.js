@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './AboutServices.module.css'
 import buildFiber from '../../../../img/aboutServices/buildFiber.jpg'
 import mobileNetwork from '../../../../img/aboutServices/mobileNetwork2.jpg'
@@ -7,7 +7,11 @@ import etl from '../../../../img/aboutServices/etl.jpg'
 import { Container } from '@material-ui/core'
 
 
+
 const AboutServices = () => {
+
+
+
 	return (
 		<div className={s.AboutServices}>
 			<Container>
