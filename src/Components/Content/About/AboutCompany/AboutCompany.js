@@ -17,7 +17,7 @@ const AboutCompany = () => {
 
 
 	return (
-		<div className={s.aboutCompany} >
+		<div className={`${s.aboutCompany} block`} >
 			<Container>
 				<div className={s.aboutCompany__header} data-aos='fade-down'>
 

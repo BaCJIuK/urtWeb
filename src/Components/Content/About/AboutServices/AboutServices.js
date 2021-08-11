@@ -13,7 +13,7 @@ const AboutServices = () => {
 
 
 	return (
-		<div className={s.AboutServices}>
+		<div className={`${s.AboutServices} block`}>
 			<Container>
 				<div className={`${s.AboutServices__item} ${s.servicesItem}`} data-aos='fade-left'>
 					<div className={s.servicesItem__image}><img src={buildFiber} /></div>

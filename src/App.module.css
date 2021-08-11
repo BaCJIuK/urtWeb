@@ -138,6 +138,7 @@ p,
 li {
 	font-family: RobotoRegular;
 }
+
 h1,
 h2,
 h3,
@@ -150,6 +151,21 @@ button {
 
 .wrapper {
 	margin: 0 auto;
+}
+:global(.block) {
+	padding: 40px 0px;
+	border-radius: 10px;
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.5) 0%,
+		rgba(255, 255, 255, 0.5) 5%,
+		white 31%,
+		white 70%,
+		rgba(255, 255, 255, 0.5) 95%,
+		rgba(255, 255, 255, 0.5) 100%
+	);
+	margin: 80px 20px;
+	box-shadow: 0px 0px 10px white;
 }
 
 .content {
