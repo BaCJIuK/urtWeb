@@ -1,0 +1,18 @@
+.aboutPartner__title {
+	text-align: center;
+}
+
+.aboutPartner__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutPartner__image {
+	width: 250px;
+	display: flex;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}

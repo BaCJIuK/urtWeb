@@ -22,6 +22,11 @@ import AOS from 'aos'
 
 function App() {
 
+
+  const parallax = React.useRef(null);
+
+
+
   useEffect(() => {
     AOS.init({
       duration: 1000
@@ -31,7 +36,7 @@ function App() {
 
 
   return (
-    <div className={s.wrapper}>
+    <div className={s.wrapper} >
       <div className={s.header} >
         <Header />
       </div>

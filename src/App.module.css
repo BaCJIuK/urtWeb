@@ -207,7 +207,8 @@ button {
 	top: 3px;
 }
 
-.content h3 {
+.content h3,
+.content h2 {
 	margin-bottom: 10px;
 	font-size: 1.9em;
 }

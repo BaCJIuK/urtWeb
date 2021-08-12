@@ -18,6 +18,8 @@ import AboutPartners from './AboutPartners/AboutPartners'
 
 
 
+
+
 const About = () => {
 
 	let aboutCompany = useRef()
